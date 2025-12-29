@@ -19,6 +19,36 @@ body {
     background-color: #531a8b;
     color: white;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link {
+    display: flex;
+    text-decoration: none;
+}
+
+.nav-link2 {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+#sideBar img {
+    height: 3em;
+}
+
+#sideBar h1{
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: white;
+}
+#sideBar h2{
+    margin-left: 10px;
+    font-size: 1.2em;
+    color: white;
 }
 
 #header {
