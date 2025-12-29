@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: repeat(6, 1fr);
     min-height: 100vh;
     min-width: none;
 }
@@ -60,10 +60,62 @@ body {
     grid-column: 2 / 6;
     grid-row: 1 / 2;
     background-color: #ffffff;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
+#searchBar {
+    grid-column: span 2;
+    grid-row: 1 / 2;
+    padding: 10px 10px 0 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+    height: 2em;
+    background-color: #cacaca;
+    align-items: center;
+    justify-content: center;
+}
+
+#userProfile {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2em;
+    width: 100% ;
+    justify-content: right;
+    gap: 25px;
+}
+#userProfile img {
+    height: 2em;
+    cursor: pointer;
+}
+#welcome{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px 10px 10px;
+    grid-column: span 2;
+}
+#uploadButtons{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 15px;
+    padding: 0 10px 10px 10px;
+}
+#uploadButtons button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #531a8b;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
 #mainContent {
     grid-column: 2 / 6;
     grid-row: 2 / 7;
